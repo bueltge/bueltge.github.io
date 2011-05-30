@@ -4,7 +4,7 @@ jQuery(document).ready( function($){
 	var username = 'bueltge';
 	repos.ready(function() {
 		$.getJSON('http://github.com/api/v2/json/repos/show/' + username + '?callback=?', function(data, status) {
-			$.each(data.repositories, function() {
+			$.each(data.repositories.reverse(), function() {
 				var repolink = document.createElement('a');
 				$(repolink).attr('href', this.url);
 				$(repolink).html(this.name);
