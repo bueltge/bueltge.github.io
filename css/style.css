@@ -1,7 +1,7 @@
 body {
 	color:#161406;
 	background: #fff;
-	padding: 1em;
+	padding: 0;
 	margin: 0;
 	font-size: 100%;
 	font-family: candara,"liberation sans","trebuchet ms","lucida grande",helvetica,sans-serif;
@@ -24,7 +24,7 @@ a:hover {
 h1 { display: none; }
 
 h2 {
-	margin: .7em 0;
+	margin: 0 0 .7em 0;
 	color: #bbb28e;
 	font-style: italic;
 	margin-bottom: 1em;
@@ -39,13 +39,12 @@ p {
 
 aside {
 	width: 20%;
-	min-height: 40%;
-	padding: 0 3%;
+	padding: 1% 2%;
 	list-style: none;
 	list-style-type: none;
 	float: right;
 	/* Firefox 3.6+ */
-	background: -moz-linear-gradient(100% 100% 90deg, #ccc, #fff);
+	background: -moz-linear-gradient(100% 100% 90deg, #fff, #ccc);
 	/* Safari 4-5, Chrome 1-9 */
 	/* -webkit-gradient(<type>, <point> [, <radius>]?, <point> [, <radius>]? [, <stop>]*) */
 	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#ccc), to(#fff));
@@ -77,18 +76,21 @@ aside li.aboutme {
 
 aside li.twitter {
 	background: url( 'http://twitter.com/favicon.ico' ) no-repeat;
-	padding-left: 20px;
+	padding: 0 0 4em 20px;
 }
 
 section {
 	text-align: left;
 	font-size: 1em;
 	margin-right: 35%;
+	padding: 2em 0 0 2em;
 }
 
 section .repo {
 	margin-bottom: 10px;
 }
+
+section .repo p { margin-left: 5px; }
 
 
 
@@ -102,12 +104,9 @@ section span {
 	-webkit-box-shadow: inset 0 0 1px 1px #f6f6f6;
 	box-shadow: inset 0 0 1px 1px #f6f6f6;
 	color: #333;
-	font-family: "helvetica neue", helvetica, arial, sans-serif;
-	font-size: 12px;
+	font-size: .75em;
 	font-weight: bold;
-	line-height: 1;
-	padding: 3px 4px;
-	text-align: center;
+	padding: 1px 4px;
 	text-shadow: 0 1px 0 #fff;
 }
 
