@@ -2,7 +2,7 @@ body {
 	color:#161406;
 	background: #fff;
 	padding: 0;
-	margin: 0;
+	margin: 0 0 3em 0;
 	font-size: 100%;
 	font-family: candara,"liberation sans","trebuchet ms","lucida grande",helvetica,sans-serif;
 }
@@ -24,10 +24,9 @@ a:hover {
 h1 { display: none; }
 
 h2 {
-	margin: 0 0 .7em 0;
+	margin: 0 0 .4em 0;
 	color: #bbb28e;
 	font-style: italic;
-	margin-bottom: 1em;
 }
 
 h3 { margin: .3em 0; }
@@ -42,7 +41,9 @@ aside {
 	padding: 1% 2%;
 	list-style: none;
 	list-style-type: none;
-	float: right;
+	top: 0;
+	right: 0;
+	position: fixed;
 	/* Firefox 3.6+ */
 	background: -moz-linear-gradient(100% 100% 90deg, #fff, #ccc);
 	/* Safari 4-5, Chrome 1-9 */
