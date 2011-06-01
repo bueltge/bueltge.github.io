@@ -1,10 +1,16 @@
+@charset 'UTF-8';
+
+/**
+ * @package bueltge.github.com
+ */
+
 body {
-	color:#161406;
+	color: #161406;
 	background: #fff;
 	padding: 0;
 	margin: 0 0 3em 0;
 	font-size: 100%;
-	font-family: candara,"liberation sans","trebuchet ms","lucida grande",helvetica,sans-serif;
+	font-family: candara, "liberation sans", "trebuchet ms", "lucida grande", helvetica, sans-serif;
 }
 
 ul { 
@@ -93,7 +99,9 @@ section .repo {
 
 section .repo p { margin-left: 5px; }
 
-
+section div {
+	float: right;
+}
 
 section span {
 	background: #e3e3e3;
@@ -109,6 +117,23 @@ section span {
 	font-weight: bold;
 	padding: 1px 4px;
 	text-shadow: 0 1px 0 #fff;
+	margin-right: 3px;
+}
+
+section span.pushed_at, section span.created_at {
+	background: none;
+	border-color: #bbb28e;
+	color: #888;
+}
+
+section span.watchers {
+	padding-left: 20px;
+	background: url( 'https://github.com/images/modules/pagehead/repostat_watchers.png' ) #e3e3e3 3px -4px no-repeat ;
+}
+
+section span.forks {
+	padding-left: 20px;
+	background: url( 'https://github.com/images/modules/pagehead/repostat_forks.png' ) #e3e3e3 3px -4px no-repeat ;
 }
 
 section span.forked {

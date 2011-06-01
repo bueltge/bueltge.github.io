@@ -18,20 +18,33 @@ jQuery(document).ready( function($){
 				var homepage = document.createElement('a');
 				$(homepage).attr('class', 'post')
 				$(homepage).attr('href', this.homepage);
-				$(homepage).html('Post about this');
+				$(homepage).html('Homepage or Post');
 				
 				var forkbatch = document.createElement('span');
 				$(forkbatch).attr('class', 'forked').text('forked');
-
+				
+				var watchers = document.createElement('span');
+				$(watchers).html(this.watchers).attr('class', 'watchers').attr('title', 'Watchers');
+				
+				var forks = document.createElement('span');
+				$(forks).html(this.forks).attr('class', 'forks').attr('title', 'Forks');
+				
+				var pushed_at = document.createElement('span');
+				$(pushed_at).html( this.pushed_at.slice(0, 10) ).attr('class', 'pushed_at').attr('title', 'Pushed at');
+				
 				var text = document.createElement('p');
 				var line = document.createElement('li');
-				$(line).hide().append(title).append(language).append(text).attr('class', 'repo');
+				var more = document.createElement('div');
+				if (this.language)
+					$(more).append(language);
+				$(more).append(watchers).append(forks);
+				$(line).hide().append(title).append(pushed_at).append(more).append(text).attr('class', 'repo');
 				this.fork ? $(line).append(forkbatch) : $(text).html(this.description).append(homepage);
 				
 				if (this.name != username + '.github.com') {
 					$(repos).append(line);
 				}
-				$(line).fadeIn(700);
+				$(line).fadeIn(500);
 			});
 		});
 	})
