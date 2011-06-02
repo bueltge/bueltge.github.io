@@ -127,6 +127,8 @@ section span.pushed_at, section span.created_at {
 	background: none;
 	border-color: #bbb28e;
 	color: #888;
+	padding-left: 20px;
+	background: url( 'https://github.com/images/gist/comments/icons.png' ) #e3e3e3 1px -300px no-repeat ;
 }
 
 section span.watchers {
@@ -146,7 +148,7 @@ section span.forked {
 
 section span.comments {
 	padding-left: 20px;
-	background: url( 'https://github.com/images/gist/comments/icons.png' ) #e3e3e3 3px 0 no-repeat ;
+	background: url( 'https://github.com/images/gist/comments/icons.png' ) #e3e3e3 2px 0 no-repeat ;
 }
 
 section p {
