@@ -21,10 +21,18 @@ jQuery(document).ready( function($){
 				
 				var title = document.createElement('h3');
 				$(title).append(repolink).attr('class', 'repo-title')
-
+				
+				if ( '' != this.comments ) {
+					var comments = document.createElement('span');
+					$(comments).html( '!' ).attr('class', 'comments').attr('title', 'There are comments');
+				}
+				
 				var text = document.createElement('p');
 				var line = document.createElement('li');
-				$(line).hide().append(title).append(created_at).append(description).attr('class', 'repo');
+				var more = document.createElement('div');
+				if ('' != this.comments)
+					$(more).append(comments);
+				$(line).hide().append(title).append(created_at).append(more).append(description).attr('class', 'repo');
 				
 				$(repos).append(line);
 				$(line).fadeIn(700);

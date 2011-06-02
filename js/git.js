@@ -15,10 +15,13 @@ jQuery(document).ready( function($){
 				var language = document.createElement('span');
 				$(language).html(this.language);
 				
-				var homepage = document.createElement('a');
-				$(homepage).attr('class', 'post')
-				$(homepage).attr('href', this.homepage);
-				$(homepage).html('Homepage or Post');
+				if ( this.homepage ) {
+					var homepage = document.createElement('a');
+					$(homepage).attr('class', 'homepage');
+					$(homepage).attr('title', 'Link to Homepage or Post');
+					$(homepage).attr('href', this.homepage);
+					$(homepage).html('Homepage or Post');
+				}
 				
 				var forkbatch = document.createElement('span');
 				$(forkbatch).attr('class', 'forked').text('forked');
