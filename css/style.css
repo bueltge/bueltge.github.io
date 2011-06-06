@@ -133,7 +133,7 @@ section a[title^="Link to Homepage"]:hover {
 	font-weight: 400;
 }
 
-section span[title="Pushed at"], section span.created_at {
+section span[title="Pushed at"], section span[title="Created at"] {
 	background: none;
 	border-color: #bbb28e;
 	color: #888;
@@ -156,7 +156,7 @@ section span.forked {
 	font-style: italic;
 }
 
-section span.comments {
+section span[title$="comments"] {
 	padding-left: 20px;
 	background: url( 'https://github.com/images/gist/comments/icons.png' ) #e3e3e3 2px 0 no-repeat ;
 }

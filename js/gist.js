@@ -7,10 +7,10 @@ jQuery(document).ready(function($) {
 		$.each(data.gists, function() {
 			
 			var repoDescription = (this.description !== '') ? this.description : '<em>no description</em>',
-			    repoComments = (this.comments.length !== 0) ? '<span class="comments" title="There are comments">!</span>' : '',
-			    line = $('<li class="repo"> \
-					<h3 class="repo-title"><a href="https://gist.github.com/' + this.repo + '">gist: ' + this.repo + '</a></h3> \
-					<span class="created_at" title="Created at">' + this.created_at.slice(0, 10) + '</span> \
+			    repoComments = (this.comments.length !== 0) ? '<span title="There are comments">!</span>' : '',
+			    line = $('<li> \
+					<h3><a href="https://gist.github.com/' + this.repo + '">gist: ' + this.repo + '</a></h3> \
+					<span title="Created at">' + this.created_at.slice(0, 10) + '</span> \
 					<div>' + repoComments + '</div> \
 					<p>' + repoDescription + '</p> \
 				</li>').hide();
