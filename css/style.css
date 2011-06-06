@@ -101,18 +101,18 @@ section {
 	padding: 2em 0 0 2em;
 }
 
-section .repo {
+section ul li {
 	margin-bottom: 10px;
 }
 
-section .repo p { margin-left: 5px; }
+section ul li p { margin-left: 5px; }
 
 section div {
 	float: right;
 	margin-top: 15px;
 }
 
-section span, section a.homepage:hover {
+section span, section a[title^="Link to Homepage"]:hover {
 	background: #e3e3e3;
 	border: 1px solid #bbb;
 	-moz-border-radius: 3px;
@@ -129,11 +129,11 @@ section span, section a.homepage:hover {
 	margin-right: 3px;
 }
 
-section a.homepage:hover {
+section a[title^="Link to Homepage"]:hover {
 	font-weight: 400;
 }
 
-section span.pushed_at, section span.created_at {
+section span[title="Pushed at"], section span.created_at {
 	background: none;
 	border-color: #bbb28e;
 	color: #888;
@@ -141,12 +141,12 @@ section span.pushed_at, section span.created_at {
 	background: url( 'https://github.com/images/gist/comments/icons.png' ) #e3e3e3 1px -300px no-repeat ;
 }
 
-section span.watchers {
+section span[title="Watchers"] {
 	padding-left: 20px;
 	background: url( 'https://github.com/images/modules/pagehead/repostat_watchers.png' ) #e3e3e3 3px -4px no-repeat ;
 }
 
-section span.forks {
+section span[title="Forks"] {
 	padding-left: 20px;
 	background: url( 'https://github.com/images/modules/pagehead/repostat_forks.png' ) #e3e3e3 3px -4px no-repeat ;
 }
@@ -166,7 +166,7 @@ section p {
 	padding: 0;
 }
 
-section .homepage {
+section a[title^="Link to Homepage"] {
 	display: block;
 	color: #888;
 	font-size: .75em;
@@ -175,7 +175,7 @@ section .homepage {
 	border: 1px solid #fff;
 }
 
-.repo-title {
+section li h3 {
 	display: inline-block;
 	padding-right: 10px;
 }
