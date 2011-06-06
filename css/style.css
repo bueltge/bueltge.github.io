@@ -69,18 +69,28 @@ aside img {
 	box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
 }
 
-aside li.blog {
+aside li a[href*="bueltge.de"] {
 	background: url( 'http://bueltge.de/favicon.ico' ) no-repeat;
 	padding-left: 20px;
 }
 
-aside li.aboutme {
+aside li a[href*="about.me"] {
 	background: url( 'http://wac.2659.edgecastcdn.net/802659/production80/images/assets/me_16x16_rounded.png' ) no-repeat;
 	padding-left: 20px;
 }
 
-aside li.twitter {
+aside li a[href*="twitter"] {
 	background: url( 'http://twitter.com/favicon.ico' ) no-repeat;
+	padding-left: 20px;
+}
+
+aside li a[href*="xing"] {
+	background: url( 'https://www.xing.com/favicon.ico' ) no-repeat;
+	padding-left: 20px;
+}
+
+aside li a[href$="github.com/bueltge"]{
+	background: url( 'https://github.com/favicon.ico' ) no-repeat;
 	padding: 0 0 4em 20px;
 }
 
