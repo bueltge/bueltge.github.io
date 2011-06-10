@@ -7,9 +7,11 @@ jQuery(document).ready(function($) {
 		$.each(data.repositories.reverse(), function() {
 
 			if (this.name != username + '.github.com') {
-				var repoDescription = this.fork ? ('<span class="forked">forked</span>') : this.description,
-				    line = $('<li> \
+				var fork = this.fork ? ('<span class="forked">forked</span>') : (''),
+					page = this.homepage ? ('<a title="Link to Homepage or Post" href="' + this.homepage + '">Homepage or Post</a>') : ('')
+					line = $('<li> \
 						<h3><a href="' + this.url + '">' + this.name + '</a></h3> \
+						' + fork + ' \
 						<span title="Pushed at">' + this.pushed_at.slice(0, 10) + '</span> \
 						<div> \
 							<span>' + this.language + '</span> \
@@ -17,8 +19,7 @@ jQuery(document).ready(function($) {
 							<span title="Forks">' + this.forks + '</span> \
 						</div> \
 						<p> \
-							' + repoDescription + ' \
-							<a title="Link to Homepage or Post" href="' + this.homepage + '">Homepage or Post</a> \
+							' + this.description + page + ' \
 						</p> \
 					</li>').hide();
 
