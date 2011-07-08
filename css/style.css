@@ -94,6 +94,11 @@ aside li a[href$="github.com/bueltge"]{
 	padding: 0 0 4em 20px;
 }
 
+aside li a[href*="plus.google.com"]{
+	background: url( 'https://ssl.gstatic.com/s2/oz/images/favicon.ico' ) 0 0 no-repeat;
+	padding: 0 0 4em 20px;
+}
+
 section {
 	text-align: left;
 	font-size: 1em;
