@@ -95,7 +95,7 @@ aside li a[href$="github.com/bueltge"]{
 }
 
 aside li a[href$="coderwall.com/bueltge"]{
-	background: url( 'http://cdn.coderwall.com/assets/icon-af3f3aa2a9b8502d0e8667eeb3b09c5c.png' ) 0 0 no-repeat;
+	background: url( 'http://api.coderwall.com/bueltge/endorse.png' ) 0 0 no-repeat;
 	padding: 0 0 4em 20px;
 }
 
