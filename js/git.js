@@ -5,7 +5,7 @@ jQuery(document).ready(function($) {
 
 	$.getJSON('http://github.com/api/v2/json/repos/show/' + username + '?callback=?', function(data, status) {
 		$.each(data.repositories.reverse(), function() {
-
+console.dir(this);
 			if (this.name != username + '.github.com') {
 				var fork = this.fork ? ('<span class="forked">forked</span>') : (''),
 					page = this.homepage ? ('<a title="Link to Homepage or Post" href="' + this.homepage + '">Homepage or Post</a>') : ('')
