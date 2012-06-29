@@ -143,21 +143,21 @@ section a[title^="Link to Homepage"]:hover {
 	font-weight: 400;
 }
 
+section span {
+	padding: 2px 5px 2px 20px;
+}
+
 section span[title="Pushed at"], section span[title="Created at"] {
 	background: none;
 	border-color: #bbb28e;
 	color: #888;
-	padding-left: 20px;
 	background: url( 'https://github.com/images/gist/comments/icons.png' ) #e3e3e3 1px -300px no-repeat ;
 }
 
 section span[title="Watchers"] {
-	padding-left: 20px;
-	background: url( 'https://github.com/images/modules/pagehead/repostat_watchers.png' ) #e3e3e3 3px -4px no-repeat ;
 }
 
 section span[title="Forks"] {
-	padding-left: 20px;
 	background: url( 'https://github.com/images/modules/pagehead/repostat_forks.png' ) #e3e3e3 3px -4px no-repeat ;
 }
 
@@ -167,7 +167,6 @@ section span.forked {
 }
 
 section span[title$="comments"] {
-	padding-left: 20px;
 	background: url( 'https://github.com/images/gist/comments/icons.png' ) #e3e3e3 2px 0 no-repeat ;
 }
 
