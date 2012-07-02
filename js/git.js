@@ -20,7 +20,7 @@ jQuery(document).ready( function($) {
 						<span title="Pushed at">' + this.pushed_at.slice(0, 10) + '</span> \
 						<div> \
 							<span>' + this.language + '</span> \
-							<span title="Watchers">W ' + this.watchers + '</span> \
+							<span title="Watchers" class="icon-shuffle">' + this.watchers + '</span> \
 							<span title="Forks">F ' + this.forks + '</span> \
 							' + open_issues + ' \
 						</div> \
