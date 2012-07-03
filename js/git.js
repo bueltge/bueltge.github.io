@@ -12,16 +12,16 @@ jQuery(document).ready( function($) {
 			if ( this.homepage != username + '.github.com' ) {
 				console.dir(this);
 				var fork = this.fork ? ('<span class="forked">forked</span>') : (''),
-					open_issues = this.open_issues ?  ('<span title="Open Issues">I ' + this.open_issues + '</span>') : (''),
+					open_issues = this.open_issues ?  ('<span title="Open Issues" aria-hidden="true" data-icon=\'"\'>' + this.open_issues + '</span>') : (''),
 					page = this.homepage ? ('<a title="Link to Homepage or Post" href="' + this.homepage + '">Homepage or Post</a>') : ('')
 					line = $('<li> \
 						<h3><a href="' + this.html_url + '">' + this.name + '</a></h3> \
 						' + fork + ' \
-						<span title="Pushed at">' + this.pushed_at.slice(0, 10) + '</span> \
+						<span title="Pushed at" aria-hidden="true" data-icon="%">' + this.pushed_at.slice(0, 10) + '</span> \
 						<div> \
-							<span>' + this.language + '</span> \
-							<span title="Watchers" class="icon-shuffle">' + this.watchers + '</span> \
-							<span title="Forks">F ' + this.forks + '</span> \
+							<span title="Language" aria-hidden="true" data-icon="#">' + this.language + '</span> \
+							<span title="Watchers" aria-hidden="true" data-icon="$">' + this.watchers + '</span> \
+							<span title="Forks" aria-hidden="true" data-icon="!">' + this.forks + '</span> \
 							' + open_issues + ' \
 						</div> \
 						<p> \

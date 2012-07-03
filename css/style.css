@@ -6,11 +6,11 @@
 
 @font-face {
     font-family: 'EntypoRegular';
-    src: url('../font/entypo-webfont.eot');
-    src: url('../font/entypo-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../font/entypo-webfont.woff') format('woff'),
-         url('../font/entypo-webfont.ttf') format('truetype'),
-         url('../font/entypo-webfont.svg#EntypoRegular') format('svg');
+    src: url('../fonts/Entypo.eot');
+    src: url('../fonts/Entypo.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Entypo.woff') format('woff'),
+         url('../fonts/Entypo.ttf') format('truetype'),
+         url('../fonts/Entypo.svg#EntypoRegular') format('svg');
     font-weight: normal;
     font-style: normal;
 
@@ -156,22 +156,26 @@ section a[title^="Link to Homepage"]:hover {
 }
 
 section span {
-	padding: 2px 5px 2px 20px;
+	padding: 2px 5px;
+}
+section span:before {
+	font-family: 'EntypoRegular';
+	content: attr(data-icon);
+	display: inline-block;
+	speak: none;
+}
+
+section span[title^="Open"]:before {
+	font-family: 'EntypoRegular';
+	content: attr(data-icon);
+	display: inline-block;
+	speak: none;
 }
 
 section span[title="Pushed at"], section span[title="Created at"] {
 	background: none;
 	border-color: #bbb28e;
 	color: #888;
-	background: url( 'https://github.com/images/gist/comments/icons.png' ) #e3e3e3 1px -300px no-repeat ;
-}
-
-section span[title="Watchers"] {
-	font-family: 'EntypoRegular';
-}
-
-section span[title="Forks"] {
-	background: url( 'https://github.com/images/modules/pagehead/repostat_forks.png' ) #e3e3e3 3px -4px no-repeat ;
 }
 
 section span.forked {
