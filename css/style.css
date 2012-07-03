@@ -166,13 +166,6 @@ section span:before {
 	padding-right: 2px;
 }
 
-section span[title^="Open"]:before {
-	font-family: 'EntypoRegular';
-	content: attr(data-icon);
-	display: inline-block;
-	speak: none;
-}
-
 section span[title="Pushed at"], section span[title="Created at"] {
 	background: none;
 	border-color: #bbb28e;
