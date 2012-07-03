@@ -177,10 +177,6 @@ section span.forked {
 	font-style: italic;
 }
 
-section span[title$="comments"] {
-	background: url( 'https://github.com/images/gist/comments/icons.png' ) #e3e3e3 2px 0 no-repeat ;
-}
-
 section p {
 	color: #555;
 	padding: 0;

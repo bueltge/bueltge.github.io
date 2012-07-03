@@ -5,16 +5,19 @@ jQuery(document).ready( function($) {
 	    repos = $('#repositories'),
 	    username = 'bueltge',
 	    urlParam = '?sort=updated';
+	
 	$.getJSON( apiUrl + username + '/repos' + urlParam + '&callback=?', function(data, status) {
 		
-		$.each(data.data, function(i, value) {
+		$.each( data.data, function( i, value ) {
 			
 			if ( this.homepage != username + '.github.com' ) {
-				console.dir(this);
+				
 				var fork = this.fork ? ('<span class="forked">forked</span>') : (''),
-					open_issues = this.open_issues ?  ('<span title="Open Issues" aria-hidden="true" data-icon=\'"\'>' + this.open_issues + '</span>') : (''),
-					page = this.homepage ? ('<a title="Link to Homepage or Post" href="' + this.homepage + '">Homepage or Post</a>') : ('')
-					line = $('<li> \
+				    open_issues = this.open_issues ? ('<span title="Open Issues" aria-hidden="true" data-icon=\'"\'>' 
+				                  + this.open_issues + '</span>') : (''),
+				    page = this.homepage ? ('<a title="Link to Homepage or Post" href="' 
+				           + this.homepage + '">Homepage or Post</a>') : ('')
+				    line = $('<li> \
 						<h3><a href="' + this.html_url + '">' + this.name + '</a></h3> \
 						' + fork + ' \
 						<span title="Pushed at" aria-hidden="true" data-icon="%">' + this.pushed_at.slice(0, 10) + '</span> \
@@ -28,12 +31,12 @@ jQuery(document).ready( function($) {
 							' + this.description + page + ' \
 						</p> \
 					</li>').hide();
-
+					
 				$(repos).append(line);
 				$(line).fadeIn(500);
 				
 			}
-
+			
 		});
 	});
 });
