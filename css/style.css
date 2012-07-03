@@ -163,6 +163,7 @@ section span:before {
 	content: attr(data-icon);
 	display: inline-block;
 	speak: none;
+	padding-right: 2px;
 }
 
 section span[title^="Open"]:before {
