@@ -13,7 +13,6 @@
          url('../fonts/Entypo.svg#EntypoRegular') format('svg');
     font-weight: normal;
     font-style: normal;
-
 }
 
 body {
@@ -60,15 +59,11 @@ aside {
 	top: 0;
 	right: 0;
 	position: fixed;
-	/* Firefox 3.6+ */
 	background: -moz-linear-gradient(100% 100% 90deg, #fff, #ccc);
-	/* Safari 4-5, Chrome 1-9 */
-	/* -webkit-gradient(<type>, <point> [, <radius>]?, <point> [, <radius>]? [, <stop>]*) */
 	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#ccc), to(#fff));
-	/* Safari 5.1+, Chrome 10+ */
 	background: -webkit-linear-gradient(#ccc, #fff);
-	/* Opera 11.10+ */
 	background: -o-linear-gradient(#ccc, #fff);
+	background: linear-gradient(100% 100% 90deg, #fff, #ccc);
 }
 
 aside img {
@@ -89,31 +84,37 @@ aside li a[href*="bueltge.de"] {
 aside li a[href*="about.me"] {
 	background: url( 'http://wac.2659.edgecastcdn.net/802659/production80/images/assets/me_16x16_rounded.png' ) 0 0 no-repeat;
 	padding-left: 20px;
+	background-size: 16px 16px;
 }
 
 aside li a[href*="twitter"] {
 	background: url( 'http://twitter.com/favicon.ico' ) 0 0 no-repeat;
 	padding-left: 20px;
+	background-size: 16px 16px;
 }
 
 aside li a[href*="xing"] {
 	background: url( 'https://www.xing.com/favicon.ico' ) 0 0 no-repeat;
 	padding-left: 20px;
+	background-size: 16px 16px;
 }
 
 aside li a[href$="github.com/bueltge"]{
 	background: url( 'https://github.com/favicon.ico' ) 0 0 no-repeat;
 	padding: 0 0 4em 20px;
+	background-size: 16px 16px;
 }
 
 aside li a[href$="coderwall.com/bueltge"]{
 	background: url( 'http://cdn.coderwall.com/assets/icon-af3f3aa2a9b8502d0e8667eeb3b09c5c.png' ) 0 0 no-repeat;
 	padding: 0 0 4em 20px;
+	background-size: 16px 16px;
 }
 
 aside li a[href*="plus.google.com"]{
 	background: url( 'https://ssl.gstatic.com/s2/oz/images/favicon.ico' ) 0 0 no-repeat;
 	padding: 0 0 4em 20px;
+	background-size: 16px 16px;
 }
 
 section {
