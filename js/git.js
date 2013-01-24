@@ -13,8 +13,7 @@ jQuery(document).ready( function($) {
 			if ( this.homepage != username + '.github.com' ) {
 				
 				var fork = this.fork ? ('<span class="forked">forked</span>') : (''),
-				    open_issues = this.open_issues ? ('<span title="Open Issues" aria-hidden="true" data-icon=\'"\'>' 
-				                  + this.open_issues + '</span>') : (''),
+				    open_issues = this.open_issues ? ('<span title="Open Issues" aria-hidden="true" data-icon=\'"\'>' + this.open_issues + '</span>') : (''),
 				    page = this.homepage ? ('<a title="Link to Homepage or Post" href="' 
 				           + this.homepage + '">Homepage or Post</a>') : ('')
 				    line = $('<li> \

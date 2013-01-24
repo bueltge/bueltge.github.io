@@ -82,7 +82,7 @@ aside li a[href*="bueltge.de"] {
 }
 
 aside li a[href*="about.me"] {
-	background: url( 'http://wac.2659.edgecastcdn.net/802659/production80/images/assets/me_16x16_rounded.png' ) 0 0 no-repeat;
+	background: url( 'https://s.aolcdn.com/aboutme/production124/images/icons/favicon.ico' ) 0 0 no-repeat;
 	padding-left: 20px;
 	background-size: 16px 16px;
 }
@@ -110,6 +110,16 @@ aside li a[href$="coderwall.com/bueltge"]{
 	padding: 0 0 4em 20px;
 	background-size: 16px 16px;
 }
+
+	aside li a[href$="coderwall.com/bueltge"].endorse {
+		background: none;
+	}
+
+	aside li a[href$="coderwall.com/bueltge"] img {
+		width: auto;
+		height: auto;
+		margin: 0;
+	}
 
 aside li a[href*="plus.google.com"]{
 	background: url( 'https://ssl.gstatic.com/s2/oz/images/favicon.ico' ) 0 0 no-repeat;
