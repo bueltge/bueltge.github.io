@@ -42,6 +42,7 @@ h2 {
 	margin: 0 0 .4em 0;
 	color: #bbb28e;
 	font-style: italic;
+	display: none;
 }
 
 h3 { margin: .3em 0; }
