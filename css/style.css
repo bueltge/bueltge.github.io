@@ -100,7 +100,7 @@ aside li a[href*="linkedin"] {
 	background-size: 16px 16px;
 }
 
-aside li a[href$="github.io/bueltge"]{
+aside li a[href$="github.com/bueltge"]{
 	background: url( 'https://github.com/favicon.ico' ) 0 0 no-repeat;
 	padding: 0 0 4em 20px;
 	background-size: 16px 16px;
