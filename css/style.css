@@ -78,7 +78,7 @@ aside img {
 }
 
 aside li a[href*="bueltge.de"] {
-	background: url( 'http://bueltge.de/favicon.ico' ) 0 0 no-repeat;
+	background: url( 'https://bueltge.de/favicon.ico' ) 0 0 no-repeat;
 	padding-left: 20px;
 }
 
@@ -88,19 +88,19 @@ aside li a[href*="about.me"] {
 	background-size: 16px 16px;
 }
 
-aside li a[href*="twitter"] {
-	background: url( 'http://twitter.com/favicon.ico' ) 0 0 no-repeat;
+aside li a[href*="@bueltg"] {
+	background: url( 'https://mastodon.social/favicon.ico' ) 0 0 no-repeat;
 	padding-left: 20px;
 	background-size: 16px 16px;
 }
 
-aside li a[href*="xing"] {
-	background: url( 'https://www.xing.com/favicon.ico' ) 0 0 no-repeat;
+aside li a[href*="linkedin"] {
+	background: url( 'https://www.linkedin.com/favicon.ico' ) 0 0 no-repeat;
 	padding-left: 20px;
 	background-size: 16px 16px;
 }
 
-aside li a[href$="github.com/bueltge"]{
+aside li a[href$="github.io/bueltge"]{
 	background: url( 'https://github.com/favicon.ico' ) 0 0 no-repeat;
 	padding: 0 0 4em 20px;
 	background-size: 16px 16px;
@@ -112,20 +112,14 @@ aside li a[href$="coderwall.com/bueltge"]{
 	background-size: 16px 16px;
 }
 
-	aside li a[href$="coderwall.com/bueltge"].endorse {
-		background: none;
-	}
+aside li a[href$="coderwall.com/bueltge"].endorse {
+	background: none;
+}
 
-	aside li a[href$="coderwall.com/bueltge"] img {
-		width: auto;
-		height: auto;
-		margin: 0;
-	}
-
-aside li a[href*="plus.google.com"]{
-	background: url( 'https://ssl.gstatic.com/s2/oz/images/favicon.ico' ) 0 0 no-repeat;
-	padding: 0 0 4em 20px;
-	background-size: 16px 16px;
+aside li a[href$="coderwall.com/bueltge"] img {
+	width: auto;
+	height: auto;
+	margin: 0;
 }
 
 section {
